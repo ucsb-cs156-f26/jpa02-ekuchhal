@@ -73,6 +73,7 @@ public class Team {
         if (!(obj instanceof Team)) {
             return false;
         }
+        
         Team other = (Team) obj;
         return this.name.equals(other.name) && this.members.equals(other.members);
     }
@@ -82,7 +83,7 @@ public class Team {
      */
     @Override
     public String toString() {
-        return "Team(name=" + this.name + ", members=" + this.members + ")";
+       return "Team(name=" + this.name + ", members=" + this.members + ")";
     }
 
     /**
